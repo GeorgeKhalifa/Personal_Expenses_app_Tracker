@@ -51,13 +51,13 @@ class TransactionList extends StatelessWidget {
                       ? FlatButton.icon(
                           icon: Icon(Icons.delete),
                           textColor: Theme.of(context).errorColor,
-                          label: Text('Delete'),
+                          label: const Text('Delete'),
                           onPressed: () {
                             deleteTx(transactions[index].id);
                           },
                         )
                       : IconButton(
-                          icon: Icon(Icons.delete),
+                          icon:const Icon(Icons.delete),
                           color: Theme.of(context).errorColor,
                           onPressed: () {
                             deleteTx(transactions[index].id);
